@@ -1,13 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Task Manager Docs</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+
+  <!-- Docsify -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css" id="theme-link" />
+
+  <!-- Custom Styling -->
+  <style>
+    body {
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .custom-navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: #ffffff;
+      border-bottom: 1px solid #e0e0e0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+    }
+
+    .custom-navbar.dark {
+      background-color: #1f1f1f;
+      border-bottom: 1px solid #444;
+    }
+
+    .sidebar-toggle {
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: #333;
+    }
+
+    .sidebar-toggle.dark {
+      color: #fff;
+    }
+
+    .dark-toggle {
+      background: none;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      color: #333;
+    }
+
+    .dark-toggle.dark {
+      color: #fff;
+    }
+
+    .dark-mode {
+      background-color: #121212 !important;
+      color: #f0f0f0 !important;
+    }
+
+    .content {
+      padding-top: 60px;
+    }
+
+    .sidebar {
+      transition: transform 0.3s ease;
+      transform: translateX(0);
+    }
+
+    .sidebar.hidden {
+      transform: translateX(-100%);
+    }
+  </style>
 </head>
+
 <body>
-  <div id="app">Loading docs...</div>
+  <!-- Custom Navbar -->
+  <div class="custom-navbar" id="custom-navbar">
+    <button id="sidebar-toggle" class="sidebar-toggle">☰</button>
+    <button id="dark-mode-toggle" class="dark-toggle">🌙</button>
+  </div>
+
+  <!-- Docsify Root -->
+  <div id="app" class="content">Loading...</div>
+
+  <!-- Docsify Config -->
+  <script>
+    window.$docsify = {
+      name: "Task Manager Docs",
+      repo: "",
+      loadSidebar: true,
+      loadNavbar: false,
+      subMaxLevel: 2,
+      themeColor: '#42b983',
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      }
+    };
+  </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+
+  <!-- Custom JS -->
+  <script>
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const sidebarToggle = document.getElementById('sidebar-toggle');
+    const body = document.body;
+    const navbar = document.getElementById('custom-navbar');
+
+    // Sidebar Animation Toggle
+    sidebarToggle.addEventListener('click', () => {
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.classList.toggle('hidden');
+    });
+
+    // Dark Mode Toggle
+    let dark = false;
+    darkModeToggle.addEventListener('click', () => {
+      dark = !dark;
+      body.classList.toggle('dark-mode');
+      navbar.classList.toggle('dark');
+      darkModeToggle.classList.toggle('dark');
+      sidebarToggle.classList.toggle('dark');
+
+      const themeLink = document.getElementById('theme-link');
+      themeLink.setAttribute('href', dark
+        ? '//cdn.jsdelivr.net/npm/docsify/lib/themes/dark.css'
+        : '//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css');
+    });
+  </script>
 </body>
 </html>
