@@ -1,0 +1,7 @@
+- [🏠 Home](/README.md)
+- [🧠 Project Overview](#project-overview)
+- [⚙️ Tech Stack](#tech-stack)
+- [📂 Folder Structure](#folder-structure)
+- [🚀 Getting Started](#how-to-run)
+- [📦 View Project Code](https://github.com/saivamsi-dev/task-manager)
+- [👨‍💼 About Author](#author)
