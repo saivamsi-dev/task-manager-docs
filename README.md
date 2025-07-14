@@ -50,7 +50,7 @@ cd SpringApp
 ./mvnw spring-boot:run
 → Runs on: http://localhost:8080
 ```
-###2️⃣ Frontend (React)
+### 2️⃣ Frontend (React)
 ```bash
 cd ReactApp
 npm install
@@ -58,12 +58,18 @@ npm run dev
 → Runs on: http://localhost:3000
 ```
 
-👨‍💼 Author
+👨‍💼 Author:
+
 Sai Vamsi Rao
+
 🎓 CSE Undergrad @ GMRIT
+
 📷 Head of Photography – Film Club
+
 🤝 NSS Volunteer & Tech Explorer
+
 📧 saivamsi.dev.1020@gmail.com
+
 [LinkedIn](https://www.linkedin.com/in/saivamsi-dev)
 
 
