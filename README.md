@@ -1,83 +1,59 @@
-# 📋 Task Manager – Full Stack Web App
+# 📘 Task Manager - Project Documentation
 
-Welcome to the official documentation for the **Task Manager** project — a full-stack web application that helps users manage daily tasks easily and efficiently.
-
----
-
-## 🚀 Project Overview
-
-**Task Manager** is a CRUD-based full stack web app built using:
-
-- ⚛️ React (Frontend)
-- ☕ Spring Boot (Backend)
-- 💾 H2/MySQL (Database)
-
-It enables users to:
-- ➕ Add tasks
-- 📝 Edit/update tasks
-- ❌ Delete tasks
-- 📋 View task list
+Welcome to the official documentation for the **Task Manager Web App** – a full‑stack productivity tool built using **ReactJS + Spring Boot**. This guide covers everything from tech stack to project structure.
 
 ---
 
-## 🛠️ Tech Stack
-------------------------------------------------
-| Layer       | Tech Used                      |
-|-------------|--------------------------------|
-| Frontend    | React (Vite), JSX, CSS         |
-| Backend     | Java Spring Boot, REST APIs    |
-| Database    | H2 (in-memory) / MySQL         |
-| Tools       | VS Code, Postman, Git, GitHub  |
-------------------------------------------------
+## 🧠 Project Overview
+
+A web-based task management system where users can register, log in, and manage their daily tasks. Admins can view users and task summaries. Built with security, speed, and simplicity in mind.
 
 ---
 
-## 📁 Folder Structure
+## ⚙️ Tech Stack
+
+**Frontend**: React.js (Vite)  
+**Backend**: Spring Boot  
+**Database**: MySQL  
+**Design**: Figma, Canva  
+**Tools**: Postman, VS Code, Git, GitHub
+
+---
+
+## 📂 Folder Structure
 
 task-manager/
-├── ReactApp/ # Frontend
-├── SpringApp/ # Backend
-└── README.md # Main project README
+├── ReactApp/ # Frontend using React
+├── SpringApp/ # Backend using Spring Boot
+└── README.md # Project overview and badges
 
+markdown
+Copy code
 
 ---
 
-## ⚙️ How to Run the Project Locally
+## 🚀 How to Run
 
-### 1️⃣ Backend (Spring Boot)
-```bash
-cd SpringApp
-./mvnw spring-boot:run
-→ Runs on: http://localhost:8080
-```
-### 2️⃣ Frontend (React)
-```bash
-cd ReactApp
-npm install
-npm run dev
-→ Runs on: http://localhost:3000
-```
+1. **Clone this repo**  
+   `git clone https://github.com/saivamsi-dev/task-manager`
 
-👨‍💼 Author:
+2. **Start Backend (Spring Boot)**  
+   - Import into IntelliJ or Spring Tool Suite  
+   - Run `SpringAppApplication.java`  
+   - Set up your local MySQL DB in `application.properties`
 
+3. **Start Frontend (React App)**  
+   ```bash
+   cd ReactApp
+   npm install
+   npm run dev
+📦 View Project Code
+🔗 GitHub Repository: Task Manager
+
+👨‍💼 Author
 Sai Vamsi Rao
-
 🎓 CSE Undergrad @ GMRIT
-
 📷 Head of Photography – Film Club
-
-🤝 NSS Volunteer & Tech Explorer
-
+🤝 NSS Volunteer | Hackathon Participant
 📧 saivamsi.dev.1020@gmail.com
-
-[LinkedIn](https://www.linkedin.com/in/sai-vamsi-rao-1890b5375/)
-
-
-🌟 More Coming Soon...
-This documentation will grow as the project evolves.
-Stay tuned for deployment guides, API docs, feature changelogs, and more!
----
-
-## 📦 View Project Code
-
-🔗 [GitHub Repository: Task Manager](https://github.com/saivamsi-dev/task-manager)
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/saivamsi-dev)
