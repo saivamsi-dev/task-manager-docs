@@ -49,16 +49,14 @@ task-manager/
 cd SpringApp
 ./mvnw spring-boot:run
 → Runs on: http://localhost:8080
-
-2️⃣ Frontend (React)
-bash
+```
+###2️⃣ Frontend (React)
+```bash
 cd ReactApp
 npm install
 npm run dev
 → Runs on: http://localhost:3000
-
-🔗 Related Repository
-💻 Main Project Code – GitHub
+```
 
 👨‍💼 Author
 Sai Vamsi Rao
@@ -66,7 +64,8 @@ Sai Vamsi Rao
 📷 Head of Photography – Film Club
 🤝 NSS Volunteer & Tech Explorer
 📧 saivamsi.dev.1020@gmail.com
-🔗 LinkedIn
+[LinkedIn](https://www.linkedin.com/in/saivamsi-dev)
+
 
 🌟 More Coming Soon...
 This documentation will grow as the project evolves.
