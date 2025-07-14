@@ -70,7 +70,7 @@ Sai Vamsi Rao
 
 📧 saivamsi.dev.1020@gmail.com
 
-[LinkedIn](https://www.linkedin.com/in/saivamsi-dev)
+[LinkedIn](https://www.linkedin.com/in/sai-vamsi-rao-1890b5375/)
 
 
 🌟 More Coming Soon...
